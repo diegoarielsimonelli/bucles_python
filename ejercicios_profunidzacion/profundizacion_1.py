@@ -27,11 +27,24 @@ print('Comenzamos a ponernos serios!')
 
 # inicio = ....
 # fin = ....
-
+inicio = int(input('Ingrese el primero número de la secuencia\n'))
+fin = int(input('Ingrese el último número de la secuencia\n'))
 # cantidad_numeros ....
 # sumatoria ....
-
+cantidad_numeros=0
+sumatoria= 0
 # bucle.....
+for x in range(inicio,fin+1):
+   if inicio < fin:
+      cantidad_numeros= x + 1
+      sumatoria= cantidad_numeros + x
+      promedio = sumatoria / cantidad_numeros
+      print("el promedio es",promedio)
+      print("¿Cuantos numeros ingresados hay?",cantidad_numeros)
+      print("la suma de todos los numeros es",sumatoria)
+   elif inicio > fin: 
+      print(fin, "no puede ser menor que", inicio)
+     
 
 # Al terminar el bucle calcular el promedio como:
 # promedio = sumatoria / cantidad_numeros

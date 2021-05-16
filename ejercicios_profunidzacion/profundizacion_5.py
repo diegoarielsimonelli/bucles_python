@@ -78,3 +78,53 @@ hacer un bosquejo del sistema ya que deberá utilizar 3 bucles en total,
 
 print("Mi primer pasito en data analytics")
 # Empezar aquí la resolución del ejercicio
+
+
+
+
+
+while True:
+    palabras_alfabeto=None
+    palabras_letras= None
+    palabras_deseadas = 4
+    palabras = []
+
+    print("¿Cómo quieres ordenar las 4 palabras?\n Hay 3 opciones: 1,2 ó 3: \n 1 - Obtener la palabra más grande por orden alfabético \n 2 - Obtener la palabra más grande por cantidad de letras \n 3 - Salir del programa")
+    opción= (input())
+    print("la opción elegida es:",opción)
+    if opción == 1:
+        for i in range(palabras_deseadas):  
+            print("Dígame una palabra", str(i + 1) + ": ", end="")
+            palabra =(input())
+            palabras.apped(palabra)
+            print("La lista creada es:", palabras)
+        for palabra in palabras:
+            if (palabras_alfabeto == None) or (palabras_alfabeto < palabra):
+                palabras_alfabeto = palabra
+                print(palabras_alfabeto, "es la mayor palabra ordenando alfabéticamente")
+    elif opción == 2:
+        for i in range(palabras_deseadas):
+            print("Dígame una palabra", str(i + 1) + ": ", end="")
+            palabra =(input())
+            palabras.apped(palabra)
+            print("La lista creada es:", palabras)
+            
+        for palabra in palabras:
+            if (palabras_letras == None) or (len(palabras_letras) < len(palabra)):
+                palabras_letras = palabra
+                print("la palabra con mayor cantidad de letras es:", palabras_letras)
+
+    elif opción == 3:
+        print("el programa finalizó")
+        break
+
+    else: 
+        print("Error.Los valores validos son: 1,2 y 3. Pruebe de nuevo")
+        
+        
+        
+
+        
+    
+
+    

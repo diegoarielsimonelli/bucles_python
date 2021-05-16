@@ -14,5 +14,7 @@
 # La sumatoria se deberá ir guardando en la variable "suma"
 numeros = [1, 5, -1, 6, 10, 2, -5]
 suma = 0   # Variable ya inicializada, la suma arranca en cero
-
+for x in numeros:
+    suma += x
+    print(suma)
 print("terminamos!")

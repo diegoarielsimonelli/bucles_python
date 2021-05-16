@@ -12,7 +12,7 @@ x = 0
 while x < 5:
     print('Valor x=', x)
     x +=1   # Incrementar x en 1
-
+    
 # En este caso realizaremos un bucle mientras
 # x sea menor a 5
 valor_maximo = 5
